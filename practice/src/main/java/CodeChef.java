@@ -7,7 +7,7 @@ class Codechef
     {
 
         String name = "civic";
-        char array[] = name.toCharArray();
+        char[] array = name.toCharArray();
         int counter = 0;
         Set<String> set = new HashSet < > ();
 
