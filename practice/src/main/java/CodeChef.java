@@ -3,19 +3,19 @@ import java.lang.*;
 
 class Codechef
 {
-    public static void main(String[] args) throws java.lang.Exception
+    public static void main(String[] args)
     {
 
         String name = "civic";
-        char c[] = name.toCharArray();
+        char array[] = name.toCharArray();
         int counter = 0;
         Set<String> set = new HashSet < > ();
 
-        for (int i = 0; i < c.length; i++) {
-            for (int j = 0; j < c.length; j++) {
-                String temp = name.substring(i, j+1);
-                //c,ci,civ,civi,civic,i,iv,ivi,ivic,v,vi,vic,i,ic,c
-                set.add(temp.toString());
+        for (int i = 0; i < array.length-1; i++) {
+            for (int j = i; j < array.length-1; j++) {
+                String temp = name.substring(i, j);
+                //array,ci,civ,civi,civic,i,iv,ivi,ivic,v,vi,vic,i,ic,array
+                set.add(temp);
             }
         }
 
