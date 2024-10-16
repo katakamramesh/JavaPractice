@@ -1,7 +1,10 @@
 package sorting;
 
-public class BubbleSort {
+public class BubbleSort {//O(n²)
 
+    //In bubble sort algorithm, array is traversed from first element to last element.
+    // Here, current element is compared with the next element.
+    // If current element is greater than the next element, it is swapped.
     static void bubbleSort(int[] arr) {
         int n = arr.length;
         int temp = 0;
